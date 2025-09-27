@@ -1,2 +1,2 @@
 # technology-blog
-南邮技术博客
+技术博客
