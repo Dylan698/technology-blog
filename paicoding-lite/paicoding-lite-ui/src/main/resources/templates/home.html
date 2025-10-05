@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>技术派 Lite</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<header>
+    <h1>技术派 Lite</h1>
+    <p>一个精简版的技术社区项目骨架</p>
+</header>
+
+<main>
+    <section>
+        <h2>最新文章</h2>
+        <ul>
+            <li th:each="a : ${articles}">
+                <strong th:text="${a.title}"></strong>
+                <span th:text="${a.summary}"></span>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <small>© paicoding-lite</small>
+    <span> | <a href="https://paicoding.com" target="_blank">技术派</a></span>
+    <span> | <a href="https://github.com/itwanger/paicoding" target="_blank">原项目</a></span>
+</footer>
+</body>
+</html>
